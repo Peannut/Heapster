@@ -61,8 +61,8 @@ int main() {
     // Allocate memory through the GC
     User *user = (User *)gc_malloc(sizeof(User));
     user->id = 1;
-    user->name = (char *)gc_malloc(strlen("John Doe") + 1);
-    strcpy(user->name, "John Doe");
+    user->name = (char *)gc_malloc(strlen("Peanut") + 1);
+    strcpy(user->name, "Peanut");
     
     // Mark objects you want to keep
     gc_mark(user);
